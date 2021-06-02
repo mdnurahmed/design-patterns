@@ -2,7 +2,7 @@ package decorator
 
 import "testing"
 
-func TestGetInstance(t *testing.T) {
+func TestDecorator(t *testing.T) {
 	pizza := &normalPizza{}
 	if pizza.getPrice() != 20 {
 		t.Errorf("Expected normal pizza price to be 20 but got %d ", pizza.getPrice())
